@@ -1,10 +1,12 @@
+<!-- Pipes examples: http://voidcanvas.com/angular-2-pipes-filters/-->
+
 <div id="search-component">
   <h4>Hero Search</h4>
   <input #searchBox id="search-box" (keyup)="search(searchBox.value); searchBox.style.width=(searchBox.value === '') ? '200px' : '500px'" />
   <div>
     <div *ngFor="let hero of heroes | async | orderBy : ['name']"
          (click)="gotoDetail(hero)" class="search-result" >
-      {{hero.name}}
+      {{hero.name | uppercase}}
     </div>
   </div>
 </div>
