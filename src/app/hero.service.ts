@@ -10,7 +10,7 @@ export class HeroService {
 
   private headers = new Headers({'Content-Type': 'application/json'});
   private heroesUrl = 'api/heroes';  // URL to web api
-
+//or the above line can be './heroes' and it will refer to InMemoryDataService 'heroes' variable; 
   constructor(private http: Http) { }
 
   getHeroes(): Promise<Hero[]> {
