@@ -16,6 +16,10 @@ import { HeroDetailComponent }  from './hero-detail.component';
 import { HeroService }          from './hero.service';
 import { HeroSearchComponent }  from './hero-search.component';
 
+
+import { InnerComponentDataBinding } from './parent-child/inner';
+import { OuterComponentDataBinding2 } from './parent-child/outer';
+
 import { OrderBy }    from './orderBy.pipe'
 
 @NgModule({
@@ -32,6 +36,8 @@ import { OrderBy }    from './orderBy.pipe'
     HeroDetailComponent,
     HeroesComponent,
     HeroSearchComponent,
+    InnerComponentDataBinding,
+    OuterComponentDataBinding2,
     OrderBy
   ],
   providers: [ HeroService ],
