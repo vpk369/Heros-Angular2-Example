@@ -16,6 +16,8 @@ import { HeroDetailComponent }  from './hero-detail.component';
 import { HeroService }          from './hero.service';
 import { HeroSearchComponent }  from './hero-search.component';
 
+import { OrderBy }    from './orderBy.pipe'
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { HeroSearchComponent }  from './hero-search.component';
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    OrderBy
   ],
   providers: [ HeroService ],
   bootstrap: [ AppComponent ]
