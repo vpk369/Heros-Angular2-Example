@@ -20,6 +20,12 @@ import { HeroSearchComponent }  from './hero-search.component';
 import { InnerComponentDataBinding } from './parent-child/inner';
 import { OuterComponentDataBinding2 } from './parent-child/outer';
 
+
+import {ChildSiblingComponent} from './siblings/child-sibling.component'
+import {ChildComponent} from './siblings/child.component'
+import {ParentComponent} from './siblings/parent.component'
+import {SharedService} from './siblings/shared.service'
+
 import { OrderBy }    from './orderBy.pipe'
 
 @NgModule({
@@ -38,9 +44,13 @@ import { OrderBy }    from './orderBy.pipe'
     HeroSearchComponent,
     InnerComponentDataBinding,
     OuterComponentDataBinding2,
+    ParentComponent,
+    ChildComponent,
+    ChildSiblingComponent,
+    
     OrderBy
   ],
-  providers: [ HeroService ],
+  providers: [ HeroService, SharedService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
